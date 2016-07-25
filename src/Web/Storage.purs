@@ -81,11 +81,11 @@ foreign import getItemForeign
   -> Eff (storage :: STORAGE | eff) (Nullable String)
 
 -- | Add a new key/value pair to storage if a pair with the given key doesn't
--- | yet exist; otherwise, replace the existing value with the given key.
+-- | yet exist; otherwise, replace the existing pair.
 -- |
 -- | If a previous value is equal to the new value, this function does nothing.
--- | If this function can't set a new value, it throws an exception. Setting
--- | can fail if the user has disabled web storage, or if the storage quota has
+-- | If this function can't set a new value, it throws an exception. This can
+-- | occur if the user has disabled web storage, or if the storage quota has
 -- | been exceeded, for example.
 foreign import setItem
   :: forall eff
