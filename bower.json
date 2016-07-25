@@ -1,0 +1,35 @@
+{
+  "name": "purescript-web-storage",
+  "description": "PureScript bindings for the web storage API",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "bower_components",
+    "node_modules",
+    "output",
+    "package.json"
+  ],
+  "keywords": [
+    "purescript"
+  ],
+  "authors": [
+    "Ian D. Bollinger <ian.bollinger@gmail.com> (https://github.com/ianbollinger)"
+  ],
+  "homepage": "https://github.com/ianbollinger/purescript-web-storage",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ianbollinger/purescript-web-storage"
+  },
+  "dependencies": {
+    "purescript-eff": "^1.0.0",
+    "purescript-nullable": "^1.0.1",
+    "purescript-prelude": "^1.0.1",
+    "purescript-exceptions": "^1.0.0",
+    "purescript-maybe": "^1.0.0"
+  },
+  "devDependencies": {
+    "purescript-aff": "^1.0.0",
+    "purescript-psci-support": "^1.0.0",
+    "purescript-test-unit": "^7.0.0"
+  }
+}

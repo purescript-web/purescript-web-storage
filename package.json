@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "scripts": {
+    "postinstall": "bower install",
+    "build": "jshint src && jscs src && pulp build --optimise --to dist/web-storage.js",
+    "test": "pulp browserify --optimise --include test --main Test.Main --to dist/test.js"
+  },
+  "devDependencies": {
+    "jscs": "^3.0.7",
+    "jshint": "^2.9.2",
+    "pulp": "^9.0.1",
+    "purescript": "^0.9.2",
+    "purescript-psa": "^0.3.9"
+  }
+}
