@@ -5,7 +5,7 @@
     "build": "jshint src && jscs src && pulp build --strict"
   },
   "devDependencies": {
-    "bower": "^3.10.6",
+    "bower": "^1.7.9",
     "jscs": "^3.0.7",
     "jshint": "^2.9.2",
     "pulp": "^9.0.1",
