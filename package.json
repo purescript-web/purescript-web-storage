@@ -2,8 +2,7 @@
   "private": true,
   "scripts": {
     "postinstall": "bower install",
-    "build": "jshint src && jscs src && pulp build --optimise --to dist/web-storage.js",
-    "test": "pulp browserify --optimise --include test --main Test.Main --to dist/test.js"
+    "build": "jshint src && jscs src && pulp build --strict",
   },
   "devDependencies": {
     "jscs": "^3.0.7",
