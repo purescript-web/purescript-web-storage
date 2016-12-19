@@ -28,7 +28,7 @@
     "purescript-maybe": "^2.0.1"
   },
   "devDependencies": {
-    "purescript-aff": "^2.0.0",
+    "purescript-aff": "^2.0.1",
     "purescript-psci-support": "^2.0.0",
     "purescript-test-unit": "^10.0.1"
   }
