@@ -67,7 +67,7 @@ foreign import keyForeign
 -- |
 -- | If the given key does not exist in storage, this function returns
 -- | `Nothing`.
-getItem 
+getItem
   :: forall eff
    . String
   -> Storage
