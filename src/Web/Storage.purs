@@ -92,7 +92,7 @@ foreign import setItem
    . String
   -> String
   -> Storage
-  -> Eff (storage :: STORAGE, err :: EXCEPTION | eff) Unit
+  -> Eff (storage :: STORAGE, exception :: EXCEPTION | eff) Unit
 
 -- | Remove the key/value pair with the given key from storage.
 -- |
