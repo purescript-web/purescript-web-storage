@@ -20,17 +20,17 @@ module Web.Storage
   ) where
 
 import Prelude
-import Control.Monad.Eff (Eff)
+import Control.Monad.Eff (Eff, kind Effect)
 import Control.Monad.Eff.Exception (EXCEPTION)
 import Data.Nullable as Nullable
 import Data.Nullable (Nullable)
 import Data.Maybe (Maybe)
 
 -- | The web storage effect.
-foreign import data STORAGE :: !
+foreign import data STORAGE :: Effect
 
 -- | Provides access to a list of key/value pairs.
-foreign import data Storage :: *
+foreign import data Storage :: Type
 
 -- | Storage that persists between browsing sessions.
 foreign import local :: forall eff. Eff (storage :: STORAGE | eff) Storage
@@ -92,7 +92,7 @@ foreign import setItem
    . String
   -> String
   -> Storage
-  -> Eff (storage :: STORAGE, err :: EXCEPTION | eff) Unit
+  -> Eff (storage :: STORAGE, exception :: EXCEPTION | eff) Unit
 
 -- | Remove the key/value pair with the given key from storage.
 -- |
