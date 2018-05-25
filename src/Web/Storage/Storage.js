@@ -1,18 +1,4 @@
-// Copyright 2016 Ian D. Bollinger
-//
-// Licensed under the MIT license <LICENSE or
-// http://opensource.org/licenses/MIT>. This file may not be copied, modified,
-// or distributed except according to those terms.
-
 "use strict";
-
-exports.local = function () {
-  return window.localStorage;
-};
-
-exports.session = function () {
-  return window.sessionStorage;
-};
 
 exports.length = function (storage) {
   return function () {
@@ -20,7 +6,7 @@ exports.length = function (storage) {
   };
 };
 
-exports.keyForeign = function (index) {
+exports._key = function (index) {
   return function (storage) {
     return function () {
       return storage.key(index);
@@ -28,7 +14,7 @@ exports.keyForeign = function (index) {
   };
 };
 
-exports.getItemForeign = function (key) {
+exports._getItem = function (key) {
   return function (storage) {
     return function () {
       return storage.getItem(key);

@@ -1,15 +1,13 @@
 {
   "private": true,
   "scripts": {
-    "postinstall": "bower install",
-    "build": "jshint src && jscs src && pulp build --strict"
+    "clean": "rimraf output && rimraf .pulp-cache",
+    "build": "eslint src && pulp build -- --censor-lib --strict"
   },
   "devDependencies": {
-    "bower": "^1.7.9",
-    "jscs": "^3.0.7",
-    "jshint": "^2.9.2",
-    "pulp": "^9.0.1",
-    "purescript": "^0.9.2",
-    "purescript-psa": "^0.3.9"
+    "eslint": "^4.19.1",
+    "pulp": "^12.2.0",
+    "purescript-psa": "^0.6.0",
+    "rimraf": "^2.6.2"
   }
 }
