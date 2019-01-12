@@ -1,5 +1,24 @@
 -- | This module defines a data type and various functions for interacting
 -- | with the `Storage` interface of the Web Storage API.
+-- | For example:
+-- |
+-- | ```purescript
+-- | main :: Effect Unit
+-- | main = do
+-- |   w <- window
+-- |   s <- localStorage w
+-- |   setItem "this-is-my-key" "Here is my value." s
+-- |   v <- getItem "this-is-my-key" s
+-- |   logShow v
+-- |
+-- |   removeItem "this-is-my-key" s
+-- |   v' <- getItem "this-is-my-key" s
+-- |   log "It is gone!"
+-- |   logShow v'
+-- |
+-- |   clear s
+-- | ```
+
 module Web.Storage.Storage
   ( Storage
   , length
@@ -33,7 +52,8 @@ foreign import _getItem :: String -> Storage -> Effect (Nullable String)
 getItem :: String -> Storage -> Effect (Maybe String)
 getItem s = map toMaybe <<< _getItem s
 
--- | Given a key name and a value (in that order), adds that key to the storage or updates its value if it already exists.
+-- | Given a key name and a value (in that order), adds that key to the
+-- | storage or updates its value if it already exists.
 foreign import setItem :: String -> String -> Storage -> Effect Unit
 
 -- | Removes the given key from the storage.
