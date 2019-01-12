@@ -3,6 +3,13 @@
 -- | For example:
 -- |
 -- | ```purescript
+-- | import Prelude
+-- | import Effect (Effect)
+-- | import Effect.Console (log, logShow)
+-- | import Web.HTML (window)
+-- | import Web.HTML.Window (localStorage)
+-- | import Web.Storage.Storage (clear, getItem, removeItem, setItem)
+-- |
 -- | main :: Effect Unit
 -- | main = do
 -- |   w <- window
