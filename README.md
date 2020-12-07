@@ -1,14 +1,15 @@
 # purescript-web-storage
 
 [![Latest release](http://img.shields.io/github/release/purescript-web/purescript-web-storage.svg)](https://github.com/purescript-web/purescript-web-storage/releases)
-[![Build status](https://travis-ci.org/purescript-web/purescript-web-storage.svg?branch=master)](https://travis-ci.org/purescript-web/purescript-web-storage)
+[![Build status](https://github.com/purescript/purescript-web-storage/workflows/CI/badge.svg?branch=master)](https://github.com/purescript/purescript-web-storage/actions?query=workflow%3ACI+branch%3Amaster)
+[![Pursuit](https://pursuit.purescript.org/packages/purescript-web-storage/badge)](https://pursuit.purescript.org/packages/purescript-web-storage)
 
 Type definitions and low level interface implementations for the [W3C WebStorage API](https://www.w3.org/TR/webstorage/).
 
 ## Installation
 
 ```
-bower install purescript-web-storage
+spago install web-storage
 ```
 
 ## Documentation
