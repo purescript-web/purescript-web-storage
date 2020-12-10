@@ -16,6 +16,6 @@
   ],
   "dependencies": {
     "purescript-web-events": "master",
-    "purescript-nullable": "master"
+    "purescript-nullable": "main"
   }
 }
