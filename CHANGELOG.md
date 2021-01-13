@@ -20,3 +20,6 @@ Bumped `-web-events` dependency, `Event.defaultPrevented` is now effectful.
 
 Updated for PureScript 0.12 and the revised `purescript-web` project
 
+## [v1.0.0](https://github.com/purescript-web/purescript-web-storage/releases/tag/v1.0.0) - 2016-07-04
+
+Initial release.
