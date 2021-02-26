@@ -4,7 +4,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/purescript-web/purescript-web-storage.git"
+    "url": "https://github.com/purescript-web/purescript-web-storage.git"
   },
   "ignore": [
     "**/.*",
@@ -15,7 +15,7 @@
     "package.json"
   ],
   "dependencies": {
-    "purescript-web-events": "master",
-    "purescript-nullable": "main"
+    "purescript-nullable": "^5.0.0",
+    "purescript-web-events": "^3.0.0"
   }
 }
