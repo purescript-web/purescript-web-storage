@@ -1,28 +1,28 @@
 "use strict";
 
-exports.length = function (storage) {
+export function length(storage) {
   return function () {
     return storage.length;
   };
-};
+}
 
-exports._key = function (index) {
+export function _key(index) {
   return function (storage) {
     return function () {
       return storage.key(index);
     };
   };
-};
+}
 
-exports._getItem = function (key) {
+export function _getItem(key) {
   return function (storage) {
     return function () {
       return storage.getItem(key);
     };
   };
-};
+}
 
-exports.setItem = function (key) {
+export function setItem(key) {
   return function (value) {
     return function (storage) {
       return function () {
@@ -30,18 +30,18 @@ exports.setItem = function (key) {
       };
     };
   };
-};
+}
 
-exports.removeItem = function (key) {
+export function removeItem(key) {
   return function (storage) {
     return function () {
       storage.removeItem(key);
     };
   };
-};
+}
 
-exports.clear = function (storage) {
+export function clear(storage) {
   return function () {
     storage.clear();
   };
-};
+}
