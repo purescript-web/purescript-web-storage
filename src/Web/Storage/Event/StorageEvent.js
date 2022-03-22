@@ -1,21 +1,21 @@
 "use strict";
 
-exports._key = function (storage) {
+export function _key(storage) {
   return storage.key;
-};
+}
 
-exports._oldValue = function (storage) {
+export function _oldValue(storage) {
   return storage.oldValue;
-};
+}
 
-exports._newValue = function (storage) {
+export function _newValue(storage) {
   return storage.newValue;
-};
+}
 
-exports.url = function (storage) {
+export function url(storage) {
   return storage.url;
-};
+}
 
-exports._storageArea = function (storage) {
+export function _storageArea(storage) {
   return storage.storageArea;
-};
+}
