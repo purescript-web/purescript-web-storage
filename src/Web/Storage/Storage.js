@@ -1,5 +1,3 @@
-"use strict";
-
 export function length(storage) {
   return function () {
     return storage.length;
