@@ -15,7 +15,7 @@
     "package.json"
   ],
   "dependencies": {
-    "purescript-nullable": "^5.0.0",
-    "purescript-web-events": "^3.0.0"
+    "purescript-nullable": "main",
+    "purescript-web-events": "master"
   }
 }
