@@ -5,6 +5,16 @@ Notable changes to this project are documented in this file. The format is based
 ## [Unreleased]
 
 Breaking changes:
+
+New features:
+
+Bugfixes:
+
+Other improvements:
+
+## [v5.0.0](https://github.com/purescript-web/purescript-web-storage/releases/tag/v5.0.0) - 2022-04-27
+
+Breaking changes:
 - Migrate FFI to ES modules (#17 by @JordanMartinez)
 
 New features:
