@@ -12,6 +12,17 @@ Bugfixes:
 
 Other improvements:
 
+## [v5.0.1](https://github.com/purescript-web/purescript-web-storage/releases/tag/v5.0.1) - 2026-10-10
+
+Breaking changes:
+
+New features:
+
+Bugfixes:
+
+Other improvements:
+- Migrated from Bower/Pulp to registry-backed Spago, preserving published dependency bounds, and modernized CI and development tooling with Oxlint, Oxfmt, and purs-tidy (#20 by @thomashoneyman)
+
 ## [v5.0.0](https://github.com/purescript-web/purescript-web-storage/releases/tag/v5.0.0) - 2022-04-27
 
 Breaking changes:
